@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnovateCorp - Employee Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-rocket"></i>
+          <h1>InnovateCorp</h1>
+        </div>
+        <nav class="nav">
+          <a href="#" class="nav-link active"
+            ><i class="fas fa-home"></i> Home</a
+          >
+          <a href="#" class="nav-link"
+            ><i class="fas fa-users"></i> Directory</a
+          >
+          <a href="#" class="nav-link"
+            ><i class="fas fa-calendar"></i> Calendar</a
+          >
+          <a href="#" class="nav-link"
+            ><i class="fas fa-file-alt"></i> Documents</a
+          >
+          <a href="#" class="nav-link"><i class="fas fa-cog"></i> Settings</a>
+        </nav>
+        <div class="header-right">
+          <div class="weather-widget">
+            <i class="fas fa-sun"></i>
+            <span>72°F</span>
+          </div>
+          <div class="user-profile">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
+              alt="Profile"
+              class="profile-img"
+            />
+            <span>Mac Jack</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="welcome-banner">
+        <div class="welcome-content">
+          <h2>Good afternoon, Jack! 👋</h2>
+          <p>
+            Welcome back to your digital workspace. You have 3 new notifications
+            and 2 upcoming meetings today.
+          </p>
+        </div>
+        <div class="quick-actions">
+          <button class="quick-btn">
+            <i class="fas fa-plus"></i> New Project
+          </button>
+          <button class="quick-btn">
+            <i class="fas fa-calendar-plus"></i> Schedule Meeting
+          </button>
+          <button class="quick-btn">
+            <i class="fas fa-upload"></i> Upload File
+          </button>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- Upcoming Events Widget -->
+        <div class="widget events-widget">
+          <div class="widget-header">
+            <h3><i class="fas fa-calendar-alt"></i> Upcoming Events</h3>
+            <button class="widget-action"><i class="fas fa-plus"></i></button>
+          </div>
+          <div class="widget-content">
+            <div class="event-item">
+              <div class="event-date">
+                <span class="day">28</span>
+                <span class="month">JUL</span>
+              </div>
+              <div class="event-details">
+                <h4>All Hands Meeting</h4>
+                <p><i class="fas fa-clock"></i> 2:00 PM - 3:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> Conference Room A</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-date">
+                <span class="day">30</span>
+                <span class="month">JUL</span>
+              </div>
+              <div class="event-details">
+                <h4>Team Building Workshop</h4>
+                <p><i class="fas fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> Rooftop Terrace</p>
+              </div>
+            </div>
+            <div class="event-item">
+              <div class="event-date">
+                <span class="day">02</span>
+                <span class="month">AUG</span>
+              </div>
+              <div class="event-details">
+                <h4>Product Launch Celebration</h4>
+                <p><i class="fas fa-clock"></i> 6:00 PM - 9:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> Main Auditorium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Spotlight Widget -->
+        <div class="widget spotlight-widget">
+          <div class="widget-header">
+            <h3><i class="fas fa-star"></i> Team Spotlight</h3>
+            <button class="widget-action"><i class="fas fa-heart"></i></button>
+          </div>
+          <div class="widget-content">
+            <div class="spotlight-member">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fHww"
+                alt="Sarah Chen"
+                class="spotlight-img"
+              />
+              <div class="spotlight-info">
+                <h4>Sarah Chen</h4>
+                <p class="role">Senior UX Designer</p>
+                <p class="achievement">
+                  🏆 Led the redesign of our mobile app, increasing user
+                  engagement by 40%
+                </p>
+                <div class="spotlight-stats">
+                  <span><i class="fas fa-trophy"></i> 3 Awards</span>
+                  <span><i class="fas fa-users"></i> 15 Projects</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats Widget -->
+        <div class="widget stats-widget">
+          <div class="widget-header">
+            <h3><i class="fas fa-chart-line"></i> Company Pulse</h3>
+          </div>
+          <div class="widget-content">
+            <div class="stat-grid">
+              <div class="stat-item">
+                <div class="stat-number">127</div>
+                <div class="stat-label">Active Projects</div>
+                <div class="stat-change positive">+12%</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">89%</div>
+                <div class="stat-label">Employee Satisfaction</div>
+                <div class="stat-change positive">+3%</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">342</div>
+                <div class="stat-label">Team Members</div>
+                <div class="stat-change positive">+8</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">15</div>
+                <div class="stat-label">Offices Worldwide</div>
+                <div class="stat-change neutral">→</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Announcements Widget -->
+        <div class="widget announcements-widget">
+          <div class="widget-header">
+            <h3><i class="fas fa-bullhorn"></i> Announcements</h3>
+            <button class="widget-action"><i class="fas fa-bell"></i></button>
+          </div>
+          <div class="widget-content">
+            <div class="announcement-item priority-high">
+              <div class="announcement-badge">Important</div>
+              <h4>New Security Policy Update</h4>
+              <p>
+                Please review and acknowledge the updated security guidelines by
+                July 30th.
+              </p>
+              <div class="announcement-meta">
+                <span><i class="fas fa-user"></i> IT Security Team</span>
+                <span><i class="fas fa-clock"></i> 2 hours ago</span>
+              </div>
+            </div>
+            <div class="announcement-item">
+              <h4>Summer Office Hours</h4>
+              <p>
+                Flexible working hours are now available during summer months
+                (June-August).
+              </p>
+              <div class="announcement-meta">
+                <span><i class="fas fa-user"></i> HR Department</span>
+                <span><i class="fas fa-clock"></i> 1 day ago</span>
+              </div>
+            </div>
+            <div class="announcement-item">
+              <h4>Coffee Machine Upgrade</h4>
+              <p>
+                New premium coffee machines have been installed on all floors!
+                ☕
+              </p>
+              <div class="announcement-meta">
+                <span><i class="fas fa-user"></i> Facilities</span>
+                <span><i class="fas fa-clock"></i> 3 days ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Resources Widget -->
+        <div class="widget resources-widget">
+          <div class="widget-header">
+            <h3><i class="fas fa-bookmark"></i> Quick Resources</h3>
+          </div>
+          <div class="widget-content">
+            <div class="resource-grid">
+              <a href="#" class="resource-link">
+                <i class="fas fa-book"></i>
+                <span>Employee Handbook</span>
+              </a>
+              <a href="#" class="resource-link">
+                <i class="fas fa-headset"></i>
+                <span>IT Support</span>
+              </a>
+              <a href="#" class="resource-link">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Learning Portal</span>
+              </a>
+              <a href="#" class="resource-link">
+                <i class="fas fa-heart"></i>
+                <span>Benefits</span>
+              </a>
+              <a href="#" class="resource-link">
+                <i class="fas fa-utensils"></i>
+                <span>Cafeteria Menu</span>
+              </a>
+              <a href="#" class="resource-link">
+                <i class="fas fa-car"></i>
+                <span>Parking Info</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Birthday Widget -->
+        <div class="widget birthday-widget">
+          <div class="widget-header">
+            <h3><i class="fas fa-birthday-cake"></i> Celebrations</h3>
+          </div>
+          <div class="widget-content">
+            <div class="celebration-item">
+              <div class="celebration-type birthday">🎂</div>
+              <div class="celebration-details">
+                <h4>Happy Birthday!</h4>
+                <p>Mike Johnson (Marketing)</p>
+                <small>Today</small>
+              </div>
+            </div>
+            <div class="celebration-item">
+              <div class="celebration-type anniversary">🎉</div>
+              <div class="celebration-details">
+                <h4>Work Anniversary</h4>
+                <p>Lisa Wang (5 years)</p>
+                <small>Tomorrow</small>
+              </div>
+            </div>
+            <div class="celebration-item">
+              <div class="celebration-type new-hire">👋</div>
+              <div class="celebration-details">
+                <h4>Welcome New Hire</h4>
+                <p>Alex Rodriguez (Engineering)</p>
+                <small>This week</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact IT</a>
+          <a href="#">Feedback</a>
+        </div>
+        <div class="footer-info">
+          <p>
+            &copy; 2024 InnovateCorp. All rights reserved. | Last updated: July
+            27, 2024
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
